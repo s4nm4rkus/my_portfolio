@@ -1,0 +1,66 @@
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 5rem;
+  background: #1c2022;
+  color: white;
+  position: sticky;
+  top: 1rem;
+  z-index: 10;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  left: 5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.nav-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* 🔁 Mobile responsiveness */
+@media (max-width: 768px) {
+  .nav-container {
+    justify-content: flex-end;
+  }
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #b53434;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    padding: 1rem 5rem;
+    display: none;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}

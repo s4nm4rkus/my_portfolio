@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./homenav.css";
+import "./home.nav.css";
 import mylogo from "../../assets/logo/my-logo.svg";
 
 function HomeNav() {

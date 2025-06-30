@@ -1,5 +1,7 @@
 import "./home.css";
-import HomeNav from "../../components/Navs/homenav";
+import HomeNav from "../../components/Navs/HomeNav";
+import ServicesCard from "../../components/Cards/My Service/ServicesCard";
+
 import myImage from "../../assets/images/my-image.svg";
 import fbIcon from "../../assets/icons/fb-icon.svg";
 import linkedInIcon from "../../assets/icons/linkedin-icon.svg";
@@ -62,14 +64,15 @@ function Home() {
         </div>
         <hr
           style={{
-            marginTop: "5rem",
-            marginBottom: "5rem",
+            marginTop: "3rem",
+            marginBottom: "3rem",
             border: "solid 1.5px #1A1B1C",
           }}
         />
         <div className="services-container">
           <p className="section-title">My Services</p>
           <p className="section-subtitle">What I Do</p>
+          <ServicesCard />
         </div>
       </div>
     </>

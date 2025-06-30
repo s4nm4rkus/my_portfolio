@@ -15,7 +15,7 @@
   padding-left: 0;
 }
 .greet-text {
-  font-size: 27px;
+  font-size: 30px;
   color: #fff;
   font-weight: 800;
   margin-bottom: -45px;
@@ -38,7 +38,7 @@
   font-weight: 1000;
   margin-left: -10px;
   letter-spacing: 13px;
-  text-shadow: 3px 0 currentColor, -3px 0 currentColor;
+  text-shadow: 1px 0 currentColor, -2px 0 currentColor;
 }
 .my-skill-text {
   font-size: 24px;
@@ -171,4 +171,9 @@
   font-size: 40px;
   font-weight: bolder;
   color: #ffffff;
+}
+.services-container {
+  width: 100%;
+  justify-content: center;
+  align-content: center;
 }

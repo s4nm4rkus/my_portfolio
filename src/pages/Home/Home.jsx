@@ -1,7 +1,11 @@
 import "./home.css";
 import HomeNav from "../../components/Navs/homenav";
 import myImage from "../../assets/images/my-image.svg";
+import fbIcon from "../../assets/icons/fb-icon.svg";
+import linkedInIcon from "../../assets/icons/linkedin-icon.svg";
+import githubIcon from "../../assets/icons/github-icon.svg";
 import myImageOverlay from "../../assets/images/my-image-overlay.svg";
+import boxesLines from "../../assets/images/boxes-lines-bg.svg";
 
 function Home() {
   return (
@@ -16,10 +20,56 @@ function Home() {
             <p className="my-skill-text">
               A Full-stack Developer and Front-end Designer
             </p>
+            <p className="summary-description">
+              Simply dummy text of the printing and typesetting industry. Lorem
+              Ipsum has been the industry's standard dummy text ever since the
+              1500s
+            </p>
+            <p className="find-me">Find me on</p>
+            <div className="find-me-icons">
+              <button className="find-me-btns">
+                <img
+                  src={fbIcon}
+                  alt="Facebook Icon"
+                  className="find-me-icon"
+                />
+              </button>
+              <button className="find-me-btns">
+                <img
+                  src={linkedInIcon}
+                  alt="LinkedIn Icon"
+                  className="find-me-icon"
+                />
+              </button>
+              <button className="find-me-btns">
+                <img
+                  src={githubIcon}
+                  alt="Github Icon"
+                  className="find-me-icon"
+                />
+              </button>
+            </div>
           </div>
           <div className="hero-images-container">
-            <img src="#" alt="My Image" className="myimage" />
+            <img src={myImage} alt="My Image" className="myimage" />
+            <img
+              src={myImageOverlay}
+              alt="My Image"
+              className="myimageoverlay"
+            />
+            <img src={boxesLines} alt="My Image" className="boxesLines-bg" />
           </div>
+        </div>
+        <hr
+          style={{
+            marginTop: "5rem",
+            marginBottom: "5rem",
+            border: "solid 1.5px #1A1B1C",
+          }}
+        />
+        <div className="services-container">
+          <p className="section-title">My Services</p>
+          <p className="section-subtitle">What I Do</p>
         </div>
       </div>
     </>

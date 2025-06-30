@@ -130,12 +130,127 @@
 .myimageoverlay {
   z-index: 3;
 }
+.services-hr {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border: solid 1.5px #1a1b1c;
+}
 
 /* Responsive tweaks */
+@media (max-width: 1920px) {
+  .hero-images-container {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    right: 18.5%;
+    margin-top: -1.5rem;
+  }
+  .myimage {
+    width: 389px;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    right: 0rem;
+  }
+
+  .myimageoverlay {
+    width: 389px;
+    height: auto;
+    position: absolute;
+    top: -50px;
+    right: 0rem;
+  }
+
+  .boxesLines-bg {
+    width: 476px;
+    height: auto;
+    position: absolute;
+    top: 7rem;
+    right: -3.5rem;
+    z-index: 1;
+  }
+
+  .name-text {
+    padding: 0;
+    font-size: 174px;
+    color: #b53434;
+    font-weight: 1000;
+    margin-top: -5.7%;
+    letter-spacing: 5px;
+    text-shadow: 1px 0 currentColor, -2px 0 currentColor;
+    margin-bottom: -5%;
+  }
+
+  .hero-text-container {
+    display: block;
+    text-align: left;
+    margin-top: 5rem;
+    z-index: 2;
+    padding-left: 0;
+  }
+  .greet-text {
+    font-size: 27px;
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: -30px;
+  }
+  .fullname-text {
+    position: absolute;
+    color: #212528;
+    margin-left: 9.4rem;
+    margin-top: 2.6rem;
+    font-size: 16px;
+    padding: 0 3px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: #fff;
+  }
+
+  .my-skill-text {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+  }
+  .summary-description {
+    width: 45%;
+    margin-top: 2rem;
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+
+  .find-me {
+    margin-top: 7rem;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 100;
+  }
+  .find-me-btns {
+    background-color: transparent;
+    border: none;
+    margin-top: 0.5rem;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .services-hr {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    border: solid 1.5px #1a1b1c;
+  }
+}
+
 @media (max-width: 1024px) {
   .myimage,
   .myimageoverlay {
     max-width: 400px;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    right: 0rem;
   }
 }
 
@@ -165,6 +280,7 @@
   font-weight: bold;
   text-transform: uppercase;
   color: #b53434;
+  margin-bottom: 0;
 }
 
 .section-subtitle {

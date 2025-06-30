@@ -62,13 +62,7 @@ function Home() {
             <img src={boxesLines} alt="My Image" className="boxesLines-bg" />
           </div>
         </div>
-        <hr
-          style={{
-            marginTop: "3rem",
-            marginBottom: "3rem",
-            border: "solid 1.5px #1A1B1C",
-          }}
-        />
+        <hr className="services-hr" />
         <div className="services-container">
           <p className="section-title">My Services</p>
           <p className="section-subtitle">What I Do</p>

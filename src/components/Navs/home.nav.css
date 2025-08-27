@@ -28,7 +28,7 @@
   color: white;
   font-weight: 200;
   font-size: 16px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .nav-links li a:hover {

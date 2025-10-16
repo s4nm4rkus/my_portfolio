@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./home.nav.css";
 import { FaBars } from "react-icons/fa";
-import mylogo from "../../assets/logo/my-logo.svg";
+import mylogo from "../../assets/logo/my-logo-2.svg";
 
 function HomeNav() {
   const [isOpen, setIsOpen] = useState(false);

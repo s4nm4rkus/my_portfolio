@@ -20,7 +20,7 @@ function Home() {
             <span className="fullname-text">San Mark A. Morcoso</span>
             <p className="name-text">Markus</p>
             <p className="my-skill-text">
-              A Full-stack Developer and Front-end Designer
+              A Full-stack Developer and UI/UX Designer
             </p>
             <p className="summary-description">
               Simply dummy text of the printing and typesetting industry. Lorem

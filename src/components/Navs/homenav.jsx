@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./home.nav.css";
+import { FaBars } from "react-icons/fa";
 import mylogo from "../../assets/logo/my-logo.svg";
 
 function HomeNav() {
@@ -12,8 +13,12 @@ function HomeNav() {
         <img src={mylogo} alt="Logo" className="mylogo" />
       </div>
 
-      <button className="nav-toggle" onClick={() => setIsOpen(!isOpen)}>
-        ☰
+      {/* ✅ Toggle rotation on click */}
+      <button
+        className={`nav-toggle ${isOpen ? "rotate" : ""}`}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <FaBars />
       </button>
 
       <ul className={`nav-links ${isOpen ? "open" : ""}`}>
@@ -34,8 +39,8 @@ function HomeNav() {
             href="#contact"
             className="contact-btn"
             style={{
-              color: hovered ? "white" : "white",
-              fontWeight: hovered ? "200" : "200",
+              color: "white",
+              fontWeight: "200",
               transform: hovered ? "scale(1.03)" : "scale(1)",
               boxShadow: hovered
                 ? "0 4px 12px rgba(138, 0, 0, 0.47)"

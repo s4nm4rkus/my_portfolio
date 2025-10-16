@@ -275,6 +275,95 @@
   }
 }
 
+@media (max-width: 414px) {
+  .home-wrapper {
+    padding: 1rem;
+  }
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .greet-text {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 800;
+    margin: 0;
+    text-align: left;
+  }
+  .fullname-text {
+    color: #212528;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    position: unset;
+    display: none;
+  }
+
+  .name-text {
+    margin-left: -3px;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 0;
+    padding: 0;
+    font-size: 93px;
+    color: #b53434;
+    font-weight: 1000;
+    letter-spacing: 2px;
+    text-align: left;
+    line-height: 0.8;
+    text-shadow: 1px 0 currentColor, -2px 0 currentColor;
+    z-index: 2;
+  }
+
+  .my-skill-text {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  .hero-images-container {
+    margin-top: 0rem;
+  }
+
+  .myimage,
+  .myimageoverlay {
+    max-width: 250px;
+    max-height: 370px;
+    z-index: 1;
+  }
+
+  .hero-text-container {
+    text-align: center;
+    margin-top: 12rem;
+  }
+  .boxesLines-bg {
+    width: 350px;
+    height: auto;
+    top: 0.5rem;
+    z-index: 0;
+    padding: 0;
+  }
+  .summary-description {
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: justify;
+    color: #fff;
+  }
+  .find-me-icons {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+}
+
 .section-title {
   font-size: 12px;
   font-weight: bold;

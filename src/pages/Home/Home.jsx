@@ -1,6 +1,8 @@
 import "./home.css";
-import HomeNav from "../../components/Navs/HomeNav";
+import HomeNav from "../../components/Navs/homenav";
 import ServicesCard from "../../components/Cards/My Service/ServicesCard";
+import WhatIDoCard from "../../components/Cards/What I do/WhatIDoCard";
+
 
 import myImage from "../../assets/images/my-image.svg";
 import fbIcon from "../../assets/icons/fb-icon.svg";
@@ -66,8 +68,10 @@ function Home() {
         <div className="services-container">
           <p className="section-title">My Services</p>
           <p className="section-subtitle">What I Do</p>
-          <ServicesCard />
+          <WhatIDoCard/>
+          
         </div>
+
       </div>
     </>
   );

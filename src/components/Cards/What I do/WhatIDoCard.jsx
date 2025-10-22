@@ -9,10 +9,8 @@ import frontEndIcon from "../../../assets/icons/front-end-icon.svg";
 import UiUxIcon from "../../../assets/icons/ui-ux-icon.svg";
 import graphicDesignIcon from "../../../assets/icons/graphic-design-icon.svg";
 
-
-
 const WhatIDoCard = () => {
-    const services = [
+  const services = [
     {
       icon: webDevIcon,
       title: "Web Development",
@@ -66,6 +64,9 @@ const WhatIDoCard = () => {
             className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center"
           >
             <div className="card-container text-left">
+              <div class="notiglow"></div>
+              <div class="notiborderglow"></div>
+
               <img
                 src={service.icon}
                 alt={service.title}
@@ -76,10 +77,9 @@ const WhatIDoCard = () => {
             </div>
           </div>
         ))}
-    </div>
+      </div>
     </div>
   );
 };
 
 export default WhatIDoCard;
-

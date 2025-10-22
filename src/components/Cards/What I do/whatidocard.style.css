@@ -1,21 +1,58 @@
 /* From Uiverse.io by icochran10 */
-.container{
-    width: 100%;
-
+.container {
+  width: 100%;
 }
-
 .card-container {
   max-width: 310px;
   min-height: 300px;
+  position: relative;
   background-color: #1c1f22;
   padding: 25px 20px;
-
- 
-  box-shadow:
-    -10px -10px 20px #212528,
-    10px 10px 20px #1c1f22,
+  box-shadow: -10px -10px 20px #262a2e, 10px 10px 20px #141618,
     inset -10px -10px 20px #1c1f22;
   border-radius: 20px;
+  overflow: hidden;
+  isolation: isolate;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* The overlay layer that was hiding your content */
+.card-container::before {
+  position: absolute;
+  content: "";
+  inset: 0.0625rem;
+  border-radius: 0.9375rem;
+  background-color: #1c1f22;
+  z-index: 0; /* 🧠 Changed from 2 → 0 so content is above it */
+}
+
+.notiglow,
+.notiborderglow {
+  position: absolute;
+  width: 40rem;
+  height: 40rem;
+  transform: translate(-55%, -55%);
+  background: radial-gradient(
+    circle closest-side at center,
+    rgba(255, 255, 255, 0.74),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 300ms ease;
+  z-index: 0; /* 🧠 Glow should be below content */
+}
+
+/* Keep your hover effect */
+.card-container:hover .notiglow,
+.card-container:hover .notiborderglow {
+  opacity: 0.1;
+}
+
+/* 🔥 Make sure text & icons are above everything */
+.card-container img,
+.card-container p {
+  position: relative;
+  z-index: 3; /* 🧠 Brings content on top of all pseudo-layers */
 }
 
 .services-icon,
@@ -36,4 +73,3 @@
   font-weight: 100;
   line-height: 22px;
 }
-

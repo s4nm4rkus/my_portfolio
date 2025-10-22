@@ -138,7 +138,6 @@
 
 /* Responsive tweaks */
 @media (max-width: 1920px) {
-  
   .hero-images-container {
     width: 100%;
     position: absolute;
@@ -245,7 +244,6 @@
 }
 
 @media (max-width: 1024px) {
-  
   .myimage,
   .myimageoverlay {
     max-width: 400px;
@@ -256,11 +254,11 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1323px)  {
-  .home-wrapper{
+@media screen and (min-width: 768px) and (max-width: 1323px) {
+  .home-wrapper {
     padding: 3rem;
   }
- 
+
   .hero-container {
     flex-direction: column;
     align-items: center;
@@ -268,18 +266,16 @@
 
   .hero-images-container {
     margin-top: 2rem;
-    
   }
 
   .myimage,
   .myimageoverlay {
-     max-width: 300px;
+    max-width: 300px;
     max-height: 420px;
     margin-right: -6rem;
     z-index: 2;
-   
   }
-  
+
   .boxesLines-bg {
     width: 400px;
     height: auto;
@@ -288,7 +284,7 @@
     z-index: 0;
     padding: 0;
   }
-  
+
   .name-text {
     height: 13rem;
     margin-left: -9px;
@@ -297,9 +293,8 @@
     margin-right: 0;
     padding: 0;
     letter-spacing: 2px;
- 
   }
-  
+
   .greet-text {
     font-size: 28px;
     color: #fff;
@@ -314,16 +309,14 @@
     font-size: 14px;
     font-weight: 700;
     position: absolute;
-   
   }
 
-  .my-skill-text{
+  .my-skill-text {
     width: 60%;
     z-index: 3;
     margin: 0;
   }
 
-  
   .summary-description {
     width: 60%;
     margin-top: 2rem;
@@ -339,10 +332,8 @@
   .hero-text-container {
     text-align: left;
     padding: 0 1rem;
-    
   }
 }
-
 
 @media (max-width: 767px) {
   .home-wrapper {
@@ -415,7 +406,6 @@
     top: 0.5rem;
     z-index: 0;
     padding: 0;
-
   }
   .summary-description {
     width: 90%;
@@ -613,7 +603,6 @@
   }
 }
 
-
 @media (max-width: 390px) {
   .home-wrapper {
     padding: 1rem;
@@ -622,8 +611,8 @@
     flex-direction: column;
     align-items: center;
   }
-  
-  .hero-text-container{
+
+  .hero-text-container {
     padding: 0;
   }
   .greet-text {
@@ -707,7 +696,6 @@
   }
 }
 
-
 @media (max-width: 375px) {
   .home-wrapper {
     padding: 1rem;
@@ -716,7 +704,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .hero-text-container{
+  .hero-text-container {
     padding: 0;
   }
   .greet-text {
@@ -808,7 +796,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .hero-text-container{
+  .hero-text-container {
     padding: 0;
   }
   .greet-text {
@@ -892,7 +880,6 @@
   }
 }
 
-
 @media (max-width: 350px) {
   .home-wrapper {
     padding: 1rem;
@@ -901,7 +888,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .hero-text-container{
+  .hero-text-container {
     padding: 0;
   }
   .greet-text {
